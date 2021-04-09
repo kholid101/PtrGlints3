@@ -4,17 +4,19 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-/* .body{
-    font-family: 'Montserrat', sans-serif;
+
+
+    /* font-family: 'Montserrat', sans-serif;
     font-family: 'Pacifico', cursive;
     font-family: 'Poppins', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-} */
+    font-family: 'Ubuntu', sans-serif; */
 
 /* untuk darkmode / style untuk Darkmode */
-#Dark-mode{
-    background: black;
-    color: white;
+body.light{
+    background: #f2f3f7;
+}
+body.dark{
+    background: #111;
 }
 
 

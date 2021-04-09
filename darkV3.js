@@ -1,23 +1,26 @@
-function Darkmode() {
-    var element = document.body;
-    element.classList.toggle("Dark-mode");
-
-    var liElement = document.getElementById("dark-web").className === "web";
-    console.log(liElement, "span");
-
-    if(liElement) {
-        document.getElementById("dark-web").className === "website-dark";
-    }else if(!liElement) {
-        document.getElementById("dark-web").className === "web";
-    }
-
-    var lightHead = document.getElementById("nav").className === "navbar";
-    // console.log("lightHead");
-
-    if (lightHead) {
-        document.getElementById("nav").className = "navbar-Dark-mode";
-    }else if(!lightHead) {
-        document.getElementById("nav").className = "navbar";
-    }
-
+// dark dan light
+const mode = document.querySelector('.mode');
+let body = {
+    'helo': document.querySelector('body'),
+    'dark': false
 }
+
+mode.addEventListener('click', ()=>{
+    if(body.dark === false){
+        body.dark = true;
+        body.helo.className = 'dark';
+        mode.textContent = 'light';
+    }
+    else{
+        body.dark = false;
+        body.helo.className = 'light';
+        mode.textContent = 'dark';
+    }
+});
+
+const btns = document.querySelectorAll('li > button');
+btns.forEach(btn =>{
+    btn.addEventListener('click', ()=>{
+        btn.classList.toggle('active');
+    });
+});
