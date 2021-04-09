@@ -401,10 +401,12 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     outline: 0;
     padding: 12px 12px;
     font-size: 20px;
+    transition: all 0.3s ease;
 }
 .contact form .button button:hover{
     background: none;
     color: green;
+    transform: scale(1.05);
 }
 
 
