@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* .body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+} */
+
+/* untuk darkmode / style untuk Darkmode */
+#Dark-mode{
+    background: black;
+    color: white;
+}
+
+
+/* style untuk navbar */
+.nav-head{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    /* background: blueviolet; */
+    font-family: 'Ubuntu', sans-serif;
+    /* padding: 15px 0; */
+    padding: 30px 0;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    /* padding: 30px 0; */
+    padding: 15px 0;
+    background: green;
+}
+
+.navbar .logo a{
+    color: cyan;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Pacifico', cursive;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    /* color: #ffff; */
+    color: gold;
+}
+.navbar .nav-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li button{
+    color:crimson;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color:crimson;
+}
+
+.navbar .menu li button:hover{
+    color: green;
+}
+
+.navbar.sticky .menu li a:hover{
+    /* color: #ffff; */
+    color: gold;
+}
+.navbar.sticky .menu li button:hover{
+    /* color: #ffff; */
+    color: gold;
+}
+
+/* style untuk button */
+.menu-btn{
+    color: #ffff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* style untuk Section */
+.home{
+    display: flex;
+    /* background: #666; */
+    /* background: url(Image/bg2.jpg) no-repeat center; */
+    background: url(Image/bg1.jpg) no-repeat center;
+    height: 100vh;
+    color: #ffff;
+    /* font-weight: 800; */
+    /* color: cyan; */
+
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .nav-head{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 26px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-size: 500;
+}
+
+
+
+/* main Section 1 */
+
+.about{
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 0;
+    cursor: default;
+    font-weight: bold;
+    color: #fff;
+    background: #222;
+}
+.about .nav-head{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #333;
+    padding: 40px 60px;
+}
+
+.about .nav-head:hover{
+    background: none;
+    /* color: #fff; */
+    transform: scale(1.03);
+}
+
+.about .title{
+    padding: 10px 0 60px 0;
+    font-size: 30px;
+    text-decoration: underline crimson;
+    text-shadow: 5px 6px 8px blue;
+    /* text-shadow: 3px 3px #FF0000; */
+    cursor: text;
+}
+
+.about .about-content .bag1{
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+}
+
+/* .about .about-content .bag1 .text{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 5px 5px 8px blue;
+} */
+
+.about .about-content .bag1 .text p{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+
+/* extra section */
+.extra{
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 0;
+    background: #111;
+    color: #ffff;
+    text-align: center;
+    /* content: "Mantap"; */
+}
+
+/* .extra::before{
+    background: #fff;
+} */
+/* .extra::after{
+    background: #111;
+} */
+
+/* .extra .nav-head{ 
+} */
+
+.extra .title{
+    height: 100%;
+    width: 100%;
+    padding: 2px 0 85px 0;
+    text-decoration: underline crimson;
+    text-shadow: 5px 5px 8px blue;
+}
+
+.extra .extra-content .card{
+    width: calc(53% - 50px);
+    /* width: 50%; */
+    background: #222;
+    text-align: center;
+    border-radius: 16px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.extra .extra-content .card:hover{
+    background: green;
+}
+
+.extra .extra-content .card .box{
+    transition: all 0.3s ease;
+}
+.extra .extra-content .card .box:hover{
+    transform: scale(1.1);
+}
+.extra .extra-content .card i{
+    /* background: crimson; */
+    /* align-items: center; */
+    /* height: 100vh; */
+}
+.extra .extra-content .card .text{
+    font-weight: bold;
+}
+.extra .extra-content .card .box p{
+    text-align: justify;
+    padding: 20px 15px 0 10px;
+}
+
+.extra .extra-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Section Contact */
+.contact{
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact .title{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 80px;
+    text-decoration: underline blue;
+    text-shadow: 5px 5px 8px blueviolet;
+}
+.contact .title:hover{
+    background: none;
+    color: crimson;
+}
+
+.contact .contact-content{
+    padding: 0 24px;
+}
+
+.contact .contact-content .column{
+    /* width: calc(50% - 30px); */
+    /* height: 45px; */
+    /* width: 100%; */
+    margin-bottom: 20px;
+}
+
+.contact .contact-content .kotak .texts{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 34px;
+    text-shadow: 3px 3px 8px blue;
+}
+.contact form .nama input{
+    /* margin-right: 10px; */
+    height: 100%;
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 6px;
+    outline: 0;
+    padding: 0 12px;
+    font-size: 17px;
+}
+.contact form .email input {
+    /* margin-left: 10px; */
+    height: 100%;
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 6px;
+    outline: 0;
+    padding: 0 12px;
+    font-size: 17px;
+}
+.contact form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 6px;
+    outline: 0;
+    padding: 0 12px;
+    font-size: 17px;
+}
+
+.contact form .button button{
+    height: 100%;
+    width: 50%;
+    /* margin-left: -882px; */
+    color: #fff;
+    background: green;
+    border: 1px solid green;
+    border-radius: 22px;
+    outline: 0;
+    padding: 12px 12px;
+    font-size: 20px;
+}
+.contact form .button button:hover{
+    background: none;
+    color: green;
+}
+
+
+/* .contact .contact-content .column .text{
+
+}
+
+
+/* .contact .kotak form .button{
+    height: 50px;
+    width: 100%;
+} */
+
+/* sesi untuk footer */
+footer{
+    /* font-family: 'Poppins', sans-serif; */
+    /* padding: 80px 0; */
+    color: #fff;
+    height: 100%;
+}
+footer .title-sosmed .foot{
+    padding: 20px 0;
+    /* background: lightgrey; */
+}
+footer .title-sosmed .sosmed-content{
+    text-align: center;
+    background: #444;
+    padding: 10px 0 20px 0;
+}
+footer .title-sosmed .sosmed-content .sosmed{
+    /* text-align: center; */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: px 0 20px 0;
+    margin-bottom: 15px;
+    text-decoration: underline crimson;
+    text-shadow: 6px 6px 8px blueviolet;
+}
+
+footer .title-sosmed .sosmed-content i{
+    padding: 25px 24px;
+    cursor: pointer;
+    font-size: 45px;
+    padding-top: 34px;
+}
+
+footer .foot{
+    text-align: center;
+    /* padding: 60px 0; */
+    background: #111;
+    /* height: 100%;
+    width: 100%; */
+}
+footer .title-sosmed .foot span{
+    color: goldenrod;
+}
+
+footer .title-sosmed .foot span a{
+    color: green;
+}
+footer .title-sosmed .foot span a:hover{
+    color: greenyellow;
+    text-decoration: underline gold;
+}
+footer .title-sosmed .foot span i{
+    color: crimson;
+}
