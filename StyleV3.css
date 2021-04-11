@@ -270,7 +270,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
 .extra .title{
     height: 100%;
     width: 100%;
-    padding: 2px 0 85px 0;
+    padding: 2px 0 185px 0;
     text-decoration: underline crimson;
     text-shadow: 5px 5px 8px blue;
 }
@@ -306,7 +306,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
 }
 .extra .extra-content .card .box p{
     text-align: justify;
-    padding: 20px 15px 0 10px;
+    padding: 20px 15px 20px 15px;
 }
 
 .extra .extra-content{
@@ -448,10 +448,16 @@ footer .title-sosmed .sosmed-content .sosmed{
 }
 
 footer .title-sosmed .sosmed-content i{
-    padding: 25px 24px;
+    padding: 25px 34px;
     cursor: pointer;
     font-size: 45px;
     padding-top: 34px;
+    transition: all 0.5s ease;
+}
+footer .title-sosmed .sosmed-content i:hover{
+    background-color: none;
+    color: green;
+    transform: scale(1.5);
 }
 
 footer .foot{
