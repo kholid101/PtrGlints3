@@ -16,24 +16,26 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="icon" href="icon/favicon.ico">
 
     <title>My Portofolio</title>
 </head>
-<body class="light">
+<body>
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-head">
-            <div class="logo"><a href="#">Kho<span>lid</span></a></div>
+            <div class="logo" id="logo"><a href="#">Kho<span>lid</span></a></div>
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#extra">Experience</a></li>
                 <li><a href="#contact">Contact</li>
                 <li><a href="#sosmed">Social Media</a></li>
-                <li><button class="mode" onclick="Darkmode()">Change Color</button></li>
+                <li><button class="fa fa-sun-o" id="change"> Change Color</button></li>
             </ul>
             <div class="menu-btn">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -45,7 +47,7 @@
             <div class="home-content">
                 <div class="text-1">Hi I am</div>
                 <div class="text-2">Kholid Fansuri Mukti</div>
-                <div class="text-3">i wanna be expert <span>Programer</span> or Web <span>Developer</span> </div>
+                <div class="text-3">I'm a Junior <span>Programer</span> or Web <span>Developer</span> </div>
             </div>
         </div>
     </section>
@@ -54,7 +56,7 @@
     <section>
         <div class="about" id="about">
             <div class="nav-head">
-                <h2 class="title">About Me</h2>
+                <h2 class="title" id="title-1">About Me</h2>
                 <div class="about-content">
                     <div class="column bag1">
                         <!-- <div class="text">Introduce My Self</div> -->
@@ -74,7 +76,7 @@
 
     <section class="extra" id="extra">
         <div class="nav-head">
-            <h2 class="title">Education and Work Experience</h2>
+            <h2 class="title" id="title-2">Education and Work Experience</h2>
             <div class="extra-content">
                 <div class="card">
                     <div class="box">
@@ -104,16 +106,16 @@
     <!-- Section untuk form -->
     <section class="contact" id="contact">
         <div class="nav-head">
-            <h2 class="title">Contact Me</h2>
+            <h2 class="title" id="title-3">Contact Me</h2>
             <div class="contact-content">
                 <div class="column kotak">
                     <div class="texts">Send Me Message</div>
                     <form action="#">
                         <div class="text nama">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Your Name..." required>
                         </div>
                         <div class="text email">
-                            <input type="email" placeholder="Example: abc@gmail.com" required>
+                            <input type="email" placeholder="Your Email... , Ex: abc@gmail.com" required>
                         </div>
                         <div class="text textarea">
                             <textarea cols="30" rows="10" placeholder="Your Message..." required></textarea>
@@ -130,7 +132,7 @@
     <!-- .title-sosmed .sosmed-content .sosmed -->
 
     <!-- saatnya section untuk footer -->
-    <footer id="sosmed2">
+    <footer class="sosm" id="sosmed2">
         <div class="title-sosmed">
             <div class="sosmed-content">
                 <div class="sosmed" id="sosmed">My Social Media</div>
@@ -141,7 +143,7 @@
                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 <!-- <i class="fa fa-youtube-play" aria-hidden="true"></i> -->
             </div>
-            <div class="foot">
+            <div class="foot" id="foot2">
                 <span>Portfolio By <i class="fa fa-copyright" aria-hidden="true">2021.</i><a href="#">Kholid Fansuri Mukti </a> | <a href="#"> FrontEndKSB </a></span>
             </div>
         </div>

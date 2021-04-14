@@ -10,58 +10,63 @@
     font-family: 'Pacifico', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Ubuntu', sans-serif; */
+    /* <i class="fa fa-sun-o" aria-hidden="true"></i> */
 
 /* untuk lightmode */
-body.light{
-    background: #f2f3f7;
+/* ======and======= */
+/* untuk Darkmode*/
+
+:root{
+    /* hm */
+    --primary-color: green;
+    --secondary-color: url(Image/bg1.jpg);
+
+    /* abt */
+    --three-color: #8dcce6;
+    --four-color: #306f88;
+
+    /* etxr */
+    --five-color: rgb(128, 113, 116);
+    --six-color: rgb(114, 82, 89);
+    
+    /* ctc */
+    --seven-color: lightblue;
+    --eight-color: green;
+    --nine-color: green;
+    --ten-color: green;
+
+    /* sosm */
+    --eleven-color: #444;
+    --twelve-: green;
+    
 }
-/* body.light #home{
-    background: #f2f3f7;
+
+.dark-theme{
+    --primary-color: rgb(8, 8, 8);
+    --secondary-color: url(Image/bgd.png);
+
+    --three-color: rgb(15, 15, 15);
+    --four-color: rgb(28, 8, 8);
+
+    --five-color: rgb(14, 12, 12);
+    --six-color: #333;
+    
+    --seven-color: #111;
+    --eight-color: #666;
+    --nine-color: green;
+    --ten-color: green;
+
+    --eleven-color: rgb(27, 24, 24);
+    --twelve-: crimson;
 }
-body.light #about{
-    background: #f2f3f7;
-}
-body.light #extra{
-    background: #f2f3f7;
-}
-body.light #contact{
-    background: #f2f3f7;
-}
-body.light #sosmed{
-    background: #f2f3f7;
-}
-body.light #sosmed2{
-    background: #f2f3f7;
-}
-body.light #sosmed .title-sosmed .sosmed-content .sosmed  i{
-    background: #f2f3f7;
-} */
 
 
-/* untuk Darkmode */
-body.dark{
-    background: #111;
-/* }
-body.dark #home{
-    background: #111;
-}
-body.dark #about{
-    background: #111;
-}
-body.dark #extra{
-    background: #111;
-}
-body.dark #contact{
-    background: #111;
-}
-body.dark #sosmed{
-    background: #111;
-}
-body.dark #sosmed2{
-    background: #111;
-}
-body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
-    background: #f2f3f7; */
+
+
+
+
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -83,7 +88,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
 .navbar.sticky{
     /* padding: 30px 0; */
     padding: 15px 0;
-    background: green;
+    background: var(--primary-color);
 }
 
 .navbar .logo a{
@@ -118,7 +123,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     transition: color 0.3s ease;
 }
 .navbar .menu li button{
-    color:crimson;
+    color: green;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -130,7 +135,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
 }
 
 .navbar .menu li button:hover{
-    color: green;
+    color: crimson;
 }
 
 .navbar.sticky .menu li a:hover{
@@ -139,7 +144,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
 }
 .navbar.sticky .menu li button:hover{
     /* color: #ffff; */
-    color: gold;
+    color: crimson;
 }
 
 /* style untuk button */
@@ -155,7 +160,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     display: flex;
     /* background: #666; */
     /* background: url(Image/bg2.jpg) no-repeat center; */
-    background: url(Image/bg1.jpg) no-repeat center;
+    background: var(--secondary-color) no-repeat center;
     height: 100vh;
     color: #ffff;
     /* font-weight: 800; */
@@ -196,7 +201,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     cursor: default;
     font-weight: bold;
     color: #fff;
-    background: #222;
+    background: var(--three-color);
 }
 .about .nav-head{
     display: flex;
@@ -206,8 +211,8 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
 
     margin-top: 20px;
     border-radius: 6px;
-    border: 1px solid #444;
-    background: #333;
+    border: none solid var(--four-color);
+    background: var(--four-color);
     padding: 40px 60px;
 }
 
@@ -251,7 +256,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
 .extra{
     font-family: 'Poppins', sans-serif;
     padding: 80px 0;
-    background: #111;
+    background: var(--five-color);
     color: #ffff;
     text-align: center;
     /* content: "Mantap"; */
@@ -279,7 +284,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     width: calc(53% - 50px);
     height: 35vh;
     /* width: 50%; */
-    background: #222;
+    background: var(--six-color);
     text-align: center;
     border-radius: 16px;
     padding: 20px 25px;
@@ -324,6 +329,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     /* font-family: 'Poppins', sans-serif; */
     padding: 80px 0;
     text-align: center;
+    background: var(--seven-color);
 }
 
 .contact .title{
@@ -332,6 +338,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: crimson;
     font-size: 34px;
     font-weight: 800;
     margin-bottom: 80px;
@@ -340,7 +347,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
 }
 .contact .title:hover{
     background: none;
-    color: crimson;
+    color: cyan;
 }
 
 .contact .contact-content{
@@ -359,6 +366,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     font-weight: bold;
     margin-bottom: 20px;
     padding-bottom: 34px;
+    color: greenyellow;
     text-shadow: 3px 3px 8px blue;
 }
 .contact form .nama input{
@@ -369,7 +377,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     outline: 0;
     padding: 0 12px;
     font-size: 17px;
-    margin: 5px 0px;
+    margin: 2px 0px;
 }
 .contact form .email input {
     /* margin-left: 10px; */
@@ -380,7 +388,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     outline: 0;
     padding: 0 12px;
     font-size: 17px;
-    margin: 5px 0px;
+    margin: 2px 0px;
 }
 .contact form .textarea textarea{
     height: 100%;
@@ -390,7 +398,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     outline: 0;
     padding: 0 12px;
     font-size: 17px;
-    margin: 5px 0px;
+    margin: 2px 0px;
 }
 
 .contact form .button button{
@@ -398,8 +406,8 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
     width: 50%;
     /* margin-left: -882px; */
     color: #fff;
-    background: green;
-    border: 1px solid green;
+    background: var(--eight-color);
+    border: 1px solid var(--nine-color);
     border-radius: 22px;
     outline: 0;
     padding: 12px 12px;
@@ -408,7 +416,7 @@ body.dark #sosmed .title-sosmed .sosmed-content .sosmed  i{
 }
 .contact form .button button:hover{
     background: none;
-    color: green;
+    color: var(--ten-color);
     transform: scale(1.1);
 }
 
@@ -437,7 +445,7 @@ footer .title-sosmed .foot{
 }
 footer .title-sosmed .sosmed-content{
     text-align: center;
-    background: #444;
+    background: var(--eleven-color);
     padding: 10px 0 20px 0;
 }
 footer .title-sosmed .sosmed-content .sosmed{
@@ -461,14 +469,14 @@ footer .title-sosmed .sosmed-content i{
 }
 footer .title-sosmed .sosmed-content i:hover{
     background-color: none;
-    color: green;
+    color: var(--twelve-color);
     transform: scale(1.5);
 }
 
 footer .foot{
     text-align: center;
     /* padding: 60px 0; */
-    background: #111;
+    background: rgb(14, 12, 12);
     /* height: 100%;
     width: 100%; */
 }
